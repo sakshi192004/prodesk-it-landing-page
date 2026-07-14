@@ -13,7 +13,7 @@ body{
 .navbar{
   position:fixed;
     top:0;
-    left:0;
+    left:0%;
 
     width:100%;
   height: 70px;
@@ -57,20 +57,7 @@ font-size: 2.2rem;
     text-shadow: 0 0 10px rgba(255, 255, 255, 0.25);
     letter-spacing: 1px;
 
-    /* background: linear-gradient(90deg, #bebdb5, #b8b09b, #c4bb9d);
-
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text; */
-
-
-  /* background-color: rgb(57, 53, 53);
-  padding: 6px;
-  font-weight: 600;
-  text-align: center;
-  border: none solid black;
-  border-radius: 10px;
-  color: #f4b400; */
+    
 }
 .nav-links{
  margin-right: 70px;
@@ -130,9 +117,7 @@ font-size: 2.2rem;
 }
 
 /* Menu Toggle */
-/* ===============================
-   MENU TOGGLE
-================================= */
+
 
 .menu-toggle{
     display: none;
@@ -155,7 +140,7 @@ font-size: 2.2rem;
     background: rgba(37,99,235,.25);
 }
 /* Mobile */
-@media (max-width:768px){
+/* @media (max-width:768px){
 
     .nav-right{
         gap:10px;
@@ -180,11 +165,11 @@ font-size: 2.2rem;
     }
 }
 
+ */
 
 
 
-
-#theme-toggle{
+/* #theme-toggle{
     width:45px;
     height:45px;
     border:none;
@@ -199,7 +184,7 @@ font-size: 2.2rem;
 #theme-toggle:hover{
     transform:scale(1.1);
     box-shadow:0 0 15px rgba(59,130,246,.5);
-}
+} */
 
 
 /* ===========================
@@ -212,9 +197,7 @@ body.light-theme{
     transition:0.4s ease;
 }
 
-/* ===========================
-        NAVBAR
-=========================== */
+
 
 /* ==========================================
             LIGHT THEME NAVBAR
@@ -222,19 +205,19 @@ body.light-theme{
 
 body.light-theme .navbar{
 
-    position: fixed;
-    top: 0px;
-    left: 50%;
+    position:fixed;
+    top:0;
+    left:50%;
     transform: translateX(-50%);
 
     width: 100%;
     height: 75px;
 
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
     margin-right: 100px;
-    padding: 0 45px;
+    padding: 1em;
 
     background: rgba(255,255,255,0.92);
     backdrop-filter: blur(15px);
@@ -245,24 +228,11 @@ body.light-theme .navbar{
 
     box-shadow: 0 10px 30px rgba(0,0,0,.08);
 
-    z-index: 1000;
+    z-index:1;
     transition: .3s ease;
 }
 
 
-/* ==========================================
-                LOGO
-========================================== */
-
-/* body.light-theme .logo h1{
-
-    color:black;
-    font-size:2rem;
-    font-weight:700;
-    letter-spacing:1px;
-
-}
- */
 
 /* ==========================================
             NAV LINKS
@@ -381,8 +351,8 @@ body.light-theme .menu-toggle{
     justify-content: center;
     align-items: center;
 
-    width: 42px;
-    height: 42px;
+    width: 32px;
+    height: 32px;
 
     background: rgba(0,0,0,0.08);
     border-radius: 50%;
@@ -1609,8 +1579,8 @@ body.light-theme .menu-toggle{
     justify-content: center;
     align-items: center;
 
-    width: 42px;
-    height: 42px;
+    width: 30px;
+    height: 30px;
 
     background: rgba(0,0,0,0.08);
     border-radius: 50%;
@@ -1643,7 +1613,7 @@ body.light-theme .menu-toggle:hover i{
 
     .navbar{
         height:65px;
-        padding:0 12px;
+        padding:0 0px;
     }
 
     .logo{
@@ -1659,7 +1629,7 @@ body.light-theme .menu-toggle:hover i{
     .nav-right{
         display:flex;
         align-items:center;
-        gap:6px;
+        gap:8px;
     }
 
     .theme-toggle,
