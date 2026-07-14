@@ -233,7 +233,7 @@ body.light-theme .navbar{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-right: 60px;
+    margin-right: 100px;
     padding: 0 45px;
 
     background: rgba(255,255,255,0.92);
