@@ -1,28 +1,89 @@
-const themeBtn = document.getElementById("theme-toggle");
-const icon = themeBtn.querySelector("i");
+// =============================
+// Mobile Menu
+// =============================
 
-// Load saved theme
-if (localStorage.getItem("theme") === "light") {
+const menuToggle = document.querySelector(".menu-toggle");
+const navLinks = document.querySelector(".nav-links");
+const menuIcon = document.querySelector(".menu-toggle i");
+
+menuToggle.addEventListener("click", () => {
+
+    navLinks.classList.toggle("active");
+
+    if (navLinks.classList.contains("active")) {
+        menuIcon.classList.replace("fa-bars", "fa-xmark");
+    } else {
+        menuIcon.classList.replace("fa-xmark", "fa-bars");
+    }
+
+});
+
+document.querySelectorAll(".nav-links a").forEach(link => {
+
+    link.addEventListener("click", () => {
+
+        navLinks.classList.remove("active");
+
+        menuIcon.classList.replace("fa-xmark", "fa-bars");
+
+    });
+
+});
+
+// =============================
+// Theme Toggle
+// =============================
+
+// =============================
+// Theme Toggle
+// =============================
+
+// =============================
+// Theme Toggle
+// =============================
+
+const themeToggle = document.querySelector(".theme-toggle");
+const themeIcon = themeToggle.querySelector("i");
+const logo = document.getElementById("logo");
+
+// Logo paths
+const darkLogo = "assets/logo-dark.png";
+const lightLogo = "assets/logo.png";
+
+// Load Saved Theme
+const savedTheme = localStorage.getItem("theme");
+
+if (savedTheme === "light") {
+
     document.body.classList.add("light-theme");
-    icon.classList.replace("fa-moon", "fa-sun");
+    themeIcon.classList.replace("fa-moon", "fa-sun");
+    logo.src = lightLogo;
+
+} else {
+
+    document.body.classList.remove("light-theme");
+    themeIcon.classList.replace("fa-sun", "fa-moon");
+    logo.src = darkLogo;
+
 }
 
-themeBtn.addEventListener("click", () => {
+// Toggle Theme
+themeToggle.addEventListener("click", () => {
+
     document.body.classList.toggle("light-theme");
 
     if (document.body.classList.contains("light-theme")) {
-        icon.classList.replace("fa-moon", "fa-sun");
+
         localStorage.setItem("theme", "light");
+        themeIcon.classList.replace("fa-moon", "fa-sun");
+        logo.src = lightLogo;
+
     } else {
-        icon.classList.replace("fa-sun", "fa-moon");
+
         localStorage.setItem("theme", "dark");
+        themeIcon.classList.replace("fa-sun", "fa-moon");
+        logo.src = darkLogo;
+
     }
-});
 
-
-const menu = document.querySelector(".menu-toggle");
-const nav = document.querySelector(".nav-links");
-
-menu.addEventListener("click", () => {
-    nav.classList.toggle("active");
 });
