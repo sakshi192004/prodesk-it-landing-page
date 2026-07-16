@@ -1,11 +1,25 @@
-# 🚀 Prodesk IT - Corporate Landing Page
+🔗 🚀 Prodesk IT - Corporate Landing Page
 
 A modern, responsive landing page developed as part of **Sprint 1: The Corporate Brand** at **Prodesk IT**.
 
 The project showcases a clean and professional UI using HTML, CSS, and JavaScript while following responsive web design principles.
 
 
-##  Features
+
+🔗 Important Links
+    
+   Live Website: https://prodesk-it-landing-page-three.vercel.app/
+
+   Demo Video: https://drive.google.com/file/d/1I1OvpnnK6iKqTaCZVfq523T4811BlV7Q/view?usp=drive_link
+
+
+🔗 Screenshot
+
+   [View Home Page Screenshot](assets/home.png)
+
+
+
+🔗  Features
 
 -  Modern and Professional UI
 -  Fully Responsive Design
@@ -18,7 +32,7 @@ The project showcases a clean and professional UI using HTML, CSS, and JavaScrip
 -  Footer with Company Information
 -  Fast Loading and Optimized Layout
 
-##  Tech Stack
+🔗 Tech Stack
 
 - HTML5
 - CSS3
@@ -27,14 +41,14 @@ The project showcases a clean and professional UI using HTML, CSS, and JavaScrip
 - CSS Grid
 - Media Queries
 
-## Services
+🔗 Services
 
 -  Web Development
 -  SEO & Search Marketing
 -  Social Media Marketing
 
 
-##  Responsive Design
+🔗  Responsive Design
 
 The landing page is optimized for
 

@@ -305,7 +305,8 @@ body.light-theme .theme-toggle:hover{
 ========================================== */
 
 body.light-theme .menu-toggle{
-    display: flex;
+    /* i change */
+    display: none;
     justify-content: center;
     align-items: center;
 
@@ -948,6 +949,10 @@ body.dark .footer-bottom{
     font-size:16px;
 }
 
+.menu-toggle{
+    display: none;
+}
+
 /* Hero */
 
 .hero-header{
@@ -1168,7 +1173,8 @@ body.light-theme .nav-links a{
 }
 
 body.light-theme .menu-toggle{
-    display:block;
+    /* change */
+    display:none;
     color:#111827;
 }
 
@@ -1320,7 +1326,7 @@ body.light-theme .menu-toggle{
     width:40px;
     height:40px;
 
-    display:flex;
+    display:none;
     justify-content:center;
     align-items:center;
 
@@ -1385,7 +1391,7 @@ body.light-theme .menu-toggle{
     }
 
     .menu-toggle{
-        display:flex;   /* Show only on mobile */
+        display:none;   /* Show only on mobile */
     }
 
     .menu-toggle i{
@@ -1641,7 +1647,6 @@ body.light-theme .menu-toggle:hover i{
     }
 
 }
-
 
 
 
